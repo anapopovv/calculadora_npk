@@ -41,3 +41,90 @@ def calcular():
     except ValueError:
         messagebox.showerror("Erro", "Por favor, insira apenas números válidos!")
 
+def avaliar_nutrientes():
+    try:
+        fosforo = float(entry_fosforo.get() or 0)
+        potassio = float(entry_potassio.get() or 0)
+        nitrogenio = float(entry_nitrogenio.get() or 0)
+        tipo_solo = combo_tipo_solo.get()
+
+        if tipo_solo == "Solo Argiloso":
+            if nitrogenio < 6:
+                classificacao_n = "Baixo"
+            elif 6 <= nitrogenio <= 12:
+                classificacao_n = "Médio"
+            else:
+                classificacao_n = "Alto"
+        elif tipo_solo == "Solo Arenoso":
+            if nitrogenio < 3:
+                classificacao_n = "Baixo"
+            elif 3 <= nitrogenio <= 8:
+                classificacao_n = "Médio"
+            else:
+                classificacao_n = "Alto"
+        elif tipo_solo == "Solo Siltoso":
+            if nitrogenio < 4:
+                classificacao_n = "Baixo"
+            elif 4 <= nitrogenio <= 9:
+                classificacao_n = "Médio"
+            else:
+                classificacao_n = "Alto"
+        else:
+            classificacao_n = "Indefinido"
+
+        if tipo_solo == "Solo Argiloso":
+            if fosforo < 6:
+                classificacao_p = "Baixo"
+            elif 6 <= fosforo <= 10:
+                classificacao_p = "Médio"
+            else:
+                classificacao_p = "Alto"
+        elif tipo_solo == "Solo Arenoso":
+            if fosforo < 4:
+                classificacao_p = "Baixo"
+            elif 4 <= fosforo <= 8:
+                classificacao_p = "Médio"
+            else:
+                classificacao_p = "Alto"
+        elif tipo_solo == "Solo Siltoso":
+            if fosforo < 5:
+                classificacao_p = "Baixo"
+            elif 5 <= fosforo <= 9:
+                classificacao_p = "Médio"
+            else:
+                classificacao_p = "Alto"
+        else:
+            classificacao_p = "Indefinido"
+
+        if tipo_solo == "Solo Argiloso":
+            if potassio < 15:
+                classificacao_k = "Baixo"
+            elif 15 <= potassio <= 25:
+                classificacao_k = "Médio"
+            else:
+                classificacao_k = "Alto"
+        elif tipo_solo == "Solo Arenoso":
+            if potassio < 12:
+                classificacao_k = "Baixo"
+            elif 12 <= potassio <= 20:
+                classificacao_k = "Médio"
+            else:
+                classificacao_k = "Alto"
+        elif tipo_solo == "Solo Siltoso":
+            if potassio < 10:
+                classificacao_k = "Baixo"
+            elif 10 <= potassio <= 18:
+                classificacao_k = "Médio"
+            else:
+                classificacao_k = "Alto"
+        else:
+            classificacao_k = "Indefinido"
+
+        analise_label.config(
+            text=f"Fósforo: {classificacao_p}\nPotássio: {classificacao_k}\nNitrogênio: {classificacao_n}"
+        )
+
+    except ValueError:
+        messagebox.showerror("Erro", "Por favor, insira valores numéricos válidos.")
+
+

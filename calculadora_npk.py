@@ -128,3 +128,25 @@ def avaliar_nutrientes():
         messagebox.showerror("Erro", "Por favor, insira valores numéricos válidos.")
 
 
+def limpar_campos():
+
+    entry_n.delete(0, 'end')
+    entry_p.delete(0, 'end')
+    entry_k.delete(0, 'end')
+    entry_n_fert.delete(0, 'end')
+    entry_p_fert.delete(0, 'end')
+    entry_k_fert.delete(0, 'end')
+    entry_fosforo.delete(0, 'end')
+    entry_potassio.delete(0, 'end')
+    entry_nitrogenio.delete(0, 'end')
+    
+    combo_tipo_solo.current(0)
+    combo_adubacao_organica.current(0)
+    
+    resultado_label.config(text='')
+    resultado_individual_n.config(text='0.00 kg/ha')
+    resultado_individual_p.config(text='0.00 kg/ha')
+    resultado_individual_k.config(text='0.00 kg/ha')
+    resultado_nitrogenio.config(text='')
+    analise_label.config(text='')
+

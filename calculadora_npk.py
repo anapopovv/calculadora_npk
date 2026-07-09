@@ -150,3 +150,17 @@ def limpar_campos():
     resultado_nitrogenio.config(text='')
     analise_label.config(text='')
 
+root = tk.Tk()
+root.title("Calculadora de Fertilizante")
+root.geometry("800x600")
+root.configure(bg="#f4f4f4")
+
+main_frame = tk.Frame(root, bg="#f4f4f4")
+main_frame.pack(padx=10, pady=10, fill="both", expand=True)
+
+left_frame = tk.Frame(main_frame, bg="#f4f4f4")
+left_frame.grid(row=0, column=0, padx=5, pady=5, sticky="nsew")
+
+right_frame = tk.Frame(main_frame, bg="#f4f4f4")
+right_frame.grid(row=0, column=1, padx=5, pady=5, sticky="nsew")
+

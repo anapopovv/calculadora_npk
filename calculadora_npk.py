@@ -164,3 +164,11 @@ left_frame.grid(row=0, column=0, padx=5, pady=5, sticky="nsew")
 right_frame = tk.Frame(main_frame, bg="#f4f4f4")
 right_frame.grid(row=0, column=1, padx=5, pady=5, sticky="nsew")
 
+frame_tipo_solo = tk.LabelFrame(left_frame, text="Tipo de Solo", bg="white", padx=10, pady=10)
+frame_tipo_solo.pack(fill="x", padx=5, pady=5)
+
+tk.Label(frame_tipo_solo, text="Selecione o tipo de solo:").grid(row=0, column=0, padx=5, pady=5, sticky="w")
+combo_tipo_solo = ttk.Combobox(frame_tipo_solo, values=["Solo Argiloso", "Solo Arenoso", "Solo Siltoso"], state="readonly")
+combo_tipo_solo.grid(row=0, column=1, padx=5, pady=5)
+combo_tipo_solo.current(0)
+

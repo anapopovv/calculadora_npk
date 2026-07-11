@@ -172,3 +172,15 @@ combo_tipo_solo = ttk.Combobox(frame_tipo_solo, values=["Solo Argiloso", "Solo A
 combo_tipo_solo.grid(row=0, column=1, padx=5, pady=5)
 combo_tipo_solo.current(0)
 
+frame_adubacao_organica = tk.LabelFrame(left_frame, text="Adubação Orgânica", bg="white", padx=10, pady=10)
+frame_adubacao_organica.pack(fill="x", padx=5, pady=5)
+
+tk.Label(frame_adubacao_organica, text="Selecione o tipo de adubação orgânica:").grid(row=0, column=0, padx=5, pady=5, sticky="w")
+combo_adubacao_organica = ttk.Combobox(frame_adubacao_organica, values=[
+    "Esterco bovino curtido", "Esterco de galinha", "Esterco de porco",
+    "Composto de lixo", "Lodo de esgoto", "Composto com lodo de esgoto",
+    "Vinhaça in natura", "Torta de mamona"
+], state="readonly")
+combo_adubacao_organica.grid(row=0, column=1, padx=5, pady=5)
+combo_adubacao_organica.current(0)
+

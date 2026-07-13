@@ -217,3 +217,21 @@ entry_k_fert.grid(row=2, column=1, padx=5, pady=5)
 resultado_nitrogenio = tk.Label(frame_fertilizante, text="", font=("Arial", 10, "bold"), bg="white")
 resultado_nitrogenio.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
 
+frame_avaliacao = tk.LabelFrame(left_frame, text="Avaliação dos Nutrientes", bg="white", padx=10, pady=10)
+frame_avaliacao.pack(fill="x", padx=5, pady=5)
+
+tk.Label(frame_avaliacao, text="Fósforo:").grid(row=0, column=0, padx=5, pady=5, sticky="w")
+entry_fosforo = tk.Entry(frame_avaliacao)
+entry_fosforo.grid(row=0, column=1, padx=5, pady=5)
+
+tk.Label(frame_avaliacao, text="Potássio:").grid(row=1, column=0, padx=5, pady=5, sticky="w")
+entry_potassio = tk.Entry(frame_avaliacao)
+entry_potassio.grid(row=1, column=1, padx=5, pady=5)
+
+tk.Label(frame_avaliacao, text="Nitrogênio:").grid(row=2, column=0, padx=5, pady=5, sticky="w")
+entry_nitrogenio = tk.Entry(frame_avaliacao)
+entry_nitrogenio.grid(row=2, column=1, padx=5, pady=5)
+
+analise_label = tk.Label(frame_avaliacao, text="", font=("Arial", 10, "bold"), bg="white")
+analise_label.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
+

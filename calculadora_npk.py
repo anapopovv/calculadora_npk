@@ -184,3 +184,18 @@ combo_adubacao_organica = ttk.Combobox(frame_adubacao_organica, values=[
 combo_adubacao_organica.grid(row=0, column=1, padx=5, pady=5)
 combo_adubacao_organica.current(0)
 
+frame_npk = tk.LabelFrame(left_frame, text="Recomendação de NPK (kg/ha)", bg="white", padx=10, pady=10)
+frame_npk.pack(fill="x", padx=5, pady=5)
+
+tk.Label(frame_npk, text="Nitrogênio (N):").grid(row=0, column=0, padx=5, pady=5, sticky="w")
+entry_n = tk.Entry(frame_npk)
+entry_n.grid(row=0, column=1, padx=5, pady=5)
+
+tk.Label(frame_npk, text="Fósforo (P):").grid(row=1, column=0, padx=5, pady=5, sticky="w")
+entry_p = tk.Entry(frame_npk)
+entry_p.grid(row=1, column=1, padx=5, pady=5)
+
+tk.Label(frame_npk, text="Potássio (K):").grid(row=2, column=0, padx=5, pady=5, sticky="w")
+entry_k = tk.Entry(frame_npk)
+entry_k.grid(row=2, column=1, padx=5, pady=5)
+

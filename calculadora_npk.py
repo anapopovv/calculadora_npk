@@ -235,3 +235,15 @@ entry_nitrogenio.grid(row=2, column=1, padx=5, pady=5)
 analise_label = tk.Label(frame_avaliacao, text="", font=("Arial", 10, "bold"), bg="white")
 analise_label.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
 
+btn_frame = tk.Frame(left_frame, bg="#f4f4f4")
+btn_frame.pack(fill="x", padx=5, pady=5)
+
+btn_calcular = tk.Button(btn_frame, text="Calcular Fertilizante", command=calcular, bg="#008CBA", fg="white", font=("Arial", 10, "bold"))
+btn_calcular.pack(fill="x", pady=5)
+
+btn_avaliar = tk.Button(btn_frame, text="Avaliar Nutrientes", command=avaliar_nutrientes, bg="#4CAF50", fg="white", font=("Arial", 10, "bold"))
+btn_avaliar.pack(fill="x", pady=5)
+
+btn_limpar = tk.Button(btn_frame, text="Limpar", command=limpar_campos, bg="#f44336", fg="white", font=("Arial", 10, "bold"))
+btn_limpar.pack(fill="x", pady=5)
+

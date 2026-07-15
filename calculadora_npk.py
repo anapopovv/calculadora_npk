@@ -274,3 +274,12 @@ tk.Label(frame_k, text="Potássio (K):", bg="white").pack(side="left", padx=5, p
 resultado_individual_k = tk.Label(frame_k, text="0.00 kg/ha", bg="white", font=("Arial", 10, "bold"))
 resultado_individual_k.pack(side="right", padx=5, pady=5)
 
+frame_formulas = tk.LabelFrame(right_frame, text="Fórmulas Utilizadas", bg="white", padx=10, pady=10)
+frame_formulas.pack(fill="x", padx=5, pady=5)
+
+tk.Label(frame_formulas, 
+        text="Nitrogênio: Qtd = N_recomendado / %N_fertilizante\n"
+             "Fósforo: Qtd = (P_recomendado / 0.437) / %P_fertilizante\n"
+             "Potássio: Qtd = (K_recomendado / 0.830) / %K_fertilizante",
+        bg="white", justify="left").pack(anchor="w", padx=5, pady=5)
+

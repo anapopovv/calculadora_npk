@@ -250,3 +250,27 @@ btn_limpar.pack(fill="x", pady=5)
 resultado_label = tk.Label(left_frame, text="", font=("Arial", 12, "bold"), bg="#f4f4f4")
 resultado_label.pack(padx=5, pady=10)
 
+frame_calculo_individual = tk.LabelFrame(right_frame, text="Cálculo Individual de Nutrientes", bg="white", padx=10, pady=10)
+frame_calculo_individual.pack(fill="both", expand=True, padx=5, pady=5)
+
+frame_n = tk.Frame(frame_calculo_individual, bg="white")
+frame_n.pack(fill="x", padx=5, pady=5)
+
+tk.Label(frame_n, text="Nitrogênio (N):", bg="white").pack(side="left", padx=5, pady=5)
+resultado_individual_n = tk.Label(frame_n, text="0.00 kg/ha", bg="white", font=("Arial", 10, "bold"))
+resultado_individual_n.pack(side="right", padx=5, pady=5)
+
+frame_p = tk.Frame(frame_calculo_individual, bg="white")
+frame_p.pack(fill="x", padx=5, pady=5)
+
+tk.Label(frame_p, text="Fósforo (P):", bg="white").pack(side="left", padx=5, pady=5)
+resultado_individual_p = tk.Label(frame_p, text="0.00 kg/ha", bg="white", font=("Arial", 10, "bold"))
+resultado_individual_p.pack(side="right", padx=5, pady=5)
+
+frame_k = tk.Frame(frame_calculo_individual, bg="white")
+frame_k.pack(fill="x", padx=5, pady=5)
+
+tk.Label(frame_k, text="Potássio (K):", bg="white").pack(side="left", padx=5, pady=5)
+resultado_individual_k = tk.Label(frame_k, text="0.00 kg/ha", bg="white", font=("Arial", 10, "bold"))
+resultado_individual_k.pack(side="right", padx=5, pady=5)
+

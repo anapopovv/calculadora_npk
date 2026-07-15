@@ -283,3 +283,4 @@ tk.Label(frame_formulas,
              "Potássio: Qtd = (K_recomendado / 0.830) / %K_fertilizante",
         bg="white", justify="left").pack(anchor="w", padx=5, pady=5)
 
+root.mainloop()

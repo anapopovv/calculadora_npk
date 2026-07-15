@@ -247,3 +247,6 @@ btn_avaliar.pack(fill="x", pady=5)
 btn_limpar = tk.Button(btn_frame, text="Limpar", command=limpar_campos, bg="#f44336", fg="white", font=("Arial", 10, "bold"))
 btn_limpar.pack(fill="x", pady=5)
 
+resultado_label = tk.Label(left_frame, text="", font=("Arial", 12, "bold"), bg="#f4f4f4")
+resultado_label.pack(padx=5, pady=10)
+
